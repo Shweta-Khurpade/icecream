@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      /* Navigation bar */
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+    nav {
+            width: 100%;
+            background-color: rgb(94, 158, 61);
+            height: 60px;
+            /*position: sticky;*/
+            top: 0px;
+        }
+        nav .navbar {
+            position: absolute;
+            top: 20px;
+            left: 700px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            width: 40%;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        a:hover {
+            color: blue;
+            
+        }
+    
+.btn {
+  margin-top: 30px;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+}
+
+a:hover {
+    background-color: rgb(22, 22, 94);
+    border-radius: 16px;
+    padding: 6px 8px 6px 8px;
+    margin: -7px;
+  }
+
+.overlay {
+  background: rgb(0, 0, 0, -5);
+  height: 100vh;
+  color: white;
+ /* border-radius: 20px;*/
+
+  background-image: url('img/cover.jpg');
+  background-repeat: no-repeat;
+ /*background-attachment: fixed;  */
+  background-size: cover;
+}
+.heading {
+  background: rgb(245, 242, 242);
+  color: #373333;
+  margin-bottom: 30px;
+  padding: 60px 0 30px 0;
+  grid-column: 1/-1;
+  text-align: center;
+  
+  
+  
+  background-image: url('img/menu.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heading > h3 {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+
+h1:hover{
+  color: greenyellow;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px;
+}
+
+.card1 {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px;
+}
+
+
+.card img {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  border-radius: 15px 15px 0 0;
+}
+.card1 img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.details {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap: 15px;
+}
+.details-sub {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.details-sub h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.price {
+  text-align: right;
+}
+.details p {
+  color: #6f6f6f;
+  font-size: 15px;
+  line-height: 25px;
+  align-self: stretch;
+}
+.details button {
+  /* background-color: #cb202d; */
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 7px;
+  width: 180px;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  color: yellow;
+}
+
+#btn1 {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+
+/* Form Section */
+
+form {
+  width: 450px;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgb(213, 212, 210);
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.inp_box {
+  width: 350px;
+  height: 37px;
+  /* margin-top: 20px; */
+  margin: 25px 45px 0 45px;
+  padding: 0 10px;
+  border-radius: 14px;
+  border: 1px solid #777;
+  outline: none;
+}
+
+.title1 {
+  color: #373333;
+  margin-bottom: 30px;
+  padding: 50px 0 30px 0;
+  text-align: center;
+}
+
+.text_area {
+  height: 160px;
+  padding-top: 10px;
+}
+.btn2 {
+  border-radius: 20px;
+  margin: 20px 45px;
+  padding: 0 10px;
+  /* margin: auto; */
+  width: 30%;
+}
+textarea {
+  height: 150px;
+  padding-top: 10px;
+}
+.btn2 {
+  border-radius: 15px;
+  color: #fff;
+  margin-top: 18px;
+  padding: 10px;
+}
+button {
+  background-color: rgb(22, 22, 94);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(94, 158, 61);
+}
+    </style>
+</head>
+
+<body>
+<nav>
+  <div class="navbar">
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Portfolio</a>
+    <a href="">Contact</a>
+  </div>
+</nav>
+
+    <div class="overlay">
+        <h1 class="h-primary">Welcome to Ice-Cream Parlour</h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam voluptates alias provident dolores. Dolor
+            consequatur exercitationem cumque. Eveniet magnam non beatae voluptatem tempore! Placeat eaque culpa ad,
+            corrupti dolores aspernatur.</p>
+            <button class="btn">Order Now</button>
+    </div>
+    <div class="heading">
+        <h1>Menu</h1>
+        <h3>Today's Ice-Cream</h3>
+    </div>
+    <div class="card">
+        <img src="Img/IParlour.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Lorem, ipsum.</h5>
+                <h5 class="price"> $10 </h5>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit reiciendis nam non quia! Earum eveniet
+                minus. Facilis explicabo natus nihil voluptatem eveniet pariatur.</p>
+                <button>Add To Cart</button>
+         </div>
+    </div>
+    <div class="card">
+      <img src="Img/IParlour.jpg" alt="">
+      <div class="details">
+          <div class="details-sub">
+              <h5>Lorem, ipsum.</h5>
+              <h5 class="price"> $10 </h5>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit reiciendis nam non quia! Earum eveniet
+              minus. Facilis explicabo natus nihil voluptatem eveniet pariatur.</p>
+              <button>Add To Cart</button>
+       </div>
+  </div>
+  <div class="card">
+    <img src="Img/IParlour.jpg" alt="">
+    <div class="details">
+        <div class="details-sub">
+            <h5>Lorem, ipsum.</h5>
+            <h5 class="price"> $10 </h5>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit reiciendis nam non quia! Earum eveniet
+            minus. Facilis explicabo natus nihil voluptatem eveniet pariatur.</p>
+            <button>Add To Cart</button>
+     </div>
+</div>
+<div class="card">
+  <img src="Img/IParlour.jpg" alt="">
+  <div class="details">
+      <div class="details-sub">
+          <h5>Lorem, ipsum.</h5>
+          <h5 class="price"> $10 </h5>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit reiciendis nam non quia! Earum eveniet
+          minus. Facilis explicabo natus nihil voluptatem eveniet pariatur.</p>
+          <button>Add To Cart</button>
+   </div>
+</div>
+
+<div class="card1">
+  <marquee width="100%" behavior="alternate" direction="right">
+    <img  src="Img/icecream.jpg" alt="">
+    <img  src="Img/i1.jpg" alt="">
+    <img  src="Img/i2.jpg" alt="">
+    <img  src="Img/i3.jpg" alt="">
+    <img  src="Img/icecream.jpg" alt="">
+  </marquee>
+</div>
+
+<div id="order">
+  <h1 class="title1">Order</h1>
+  <form action="">
+      <input type="text" class="inp_box" placeholder="Name" required>
+      <input type="email" class="inp_box" placeholder="Email" required>
+      <textarea type="text" class="inp_box text_area" placeholder="Adress"></textarea>
+      <button class="btn2">Order Now</button>
+</div>
+</form>
+
+</body>
+
+</html>
